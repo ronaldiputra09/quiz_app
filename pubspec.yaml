@@ -1,0 +1,43 @@
+name: quiz_app
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+
+dependencies:
+  cupertino_icons: ^1.0.2
+  get: 4.6.5
+  google_fonts: 4.0.3
+  http: 0.13.5
+  get_storage: 2.1.1
+  intl: 0.18.1
+  dio: 5.2.0
+  flutter_html: ^2.2.1
+  just_audio: ^0.9.34
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  icons_launcher: ^2.0.0
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - assets/
+  uses-material-design: true
+
+icons_launcher:
+  image_path: assets/icon.png
+  platforms:
+    android:
+      image_path: assets/icon.png
+      adaptive_background_color: '#FFFFFF'
+      adaptive_foreground_image: assets/icon_foreground.png
+      adaptive_round_image: assets/icon_circle.png
+      enable: true
+    ios:
+      image_path: assets/icon.png
+      enable: true
