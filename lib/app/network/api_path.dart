@@ -1,6 +1,6 @@
 class ApiPath {
-  // static const BASE_URL = "http://pembelajaran.test/api/v1";
-  static const BASE_URL = "http://192.168.100.126:8000/api/v1";
+  static const BASE_URL = "https://pembelajaran.dktollroad.com/api/v1";
+  // static const BASE_URL = "http://192.168.100.126:8000/api/v1";
 
   // USERS
   static const REGISTER = "/registration";

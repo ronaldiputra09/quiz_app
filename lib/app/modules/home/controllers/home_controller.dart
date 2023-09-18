@@ -17,12 +17,13 @@ class HomeController extends GetxController {
   var dataHistory = <HistoryModel>[].obs;
   var isPlaying = false.obs;
   var dataMusik = <String>[
-    "assets/musik_1.wav",
-    "assets/musik_2.wav",
-    "assets/musik_3.wav",
-    "assets/musik_4.wav",
+    "assets/musik_1.mp3",
+    "assets/musik_2.mp3",
+    "assets/musik_3.mp3",
+    "assets/musik_4.mp3",
+    "assets/musik_5.mp3",
   ].obs;
-  var musikPlay = "assets/musik_1.wav".obs;
+  var musikPlay = "assets/musik_2.mp3".obs;
   final player = AudioPlayer();
   @override
   void onInit() async {

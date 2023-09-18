@@ -53,7 +53,7 @@ class LoginView extends GetView {
                     FormWidget(
                       hint: "Tanggal lahir anda..",
                       controller: TextEditingController(
-                        text: DateFormat('yyyy-MM-dd').format(
+                        text: DateFormat('dd-MM-yyyy').format(
                           welcomeC.tanggalLahir.value,
                         ),
                       ),

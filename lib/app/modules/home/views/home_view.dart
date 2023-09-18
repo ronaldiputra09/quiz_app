@@ -171,7 +171,7 @@ class HomeView extends GetView<HomeController> {
             Text(
               "$title",
               style: TextStyle(
-                fontSize: 16,
+                fontSize: 14,
                 fontWeight: bold,
               ),
             ),
@@ -233,7 +233,7 @@ class HomeView extends GetView<HomeController> {
                       ),
                       SizedBox(height: 10),
                       Text(
-                        "- Mari kita evaluasi hasil belajar dengan menjawab 10 pertanyaan soal pilihan ganda.\n\n- Pilihlah jawaban menurut anda paling tepat.\n\n- Klik tombol start untuk mulai mengerjakan soal.",
+                        "- Mari kita evaluasi hasil belajar dengan menjawab 10 pertanyaan soal pilihan ganda.\n\n- Pilihlah jawaban menurut anda paling tepat.\n\n- Klik tombol start untuk mulai mengerjakan soal.\n\n- Skor untuk masing-masing pertanyaan adalah 10.",
                         style: TextStyle(
                           fontSize: 16,
                         ),
@@ -551,6 +551,14 @@ class HomeView extends GetView<HomeController> {
                     textAlign: TextAlign.center,
                   ),
                 ),
+                Text(
+                  "Skor",
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: bold,
+                  ),
+                ),
+                SizedBox(width: 25),
                 GestureDetector(
                   onTap: () {},
                   child: SizedBox(width: 42),
@@ -669,7 +677,7 @@ class HomeView extends GetView<HomeController> {
                         homeC.changeMusik(data);
                       },
                       title: Text(
-                        "${data.split("/").last.replaceAll(".wav", "").replaceAll("_", " ").capitalize}",
+                        "${data.split("/").last.replaceAll(".mp3", "").replaceAll("_", " ").capitalize}",
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: bold,
